@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maepocuser2\\Source\\Repos\\AccountDataService\\AccountLibrary.API\\Account.API.csproj": {}
+    "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\Account.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maepocuser2\\Source\\Repos\\AccountDataService\\AccountLibrary.API\\Account.API.csproj": {
+    "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\Account.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maepocuser2\\Source\\Repos\\AccountDataService\\AccountLibrary.API\\Account.API.csproj",
+        "projectUniqueName": "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\Account.API.csproj",
         "projectName": "Account.API",
-        "projectPath": "C:\\Users\\maepocuser2\\Source\\Repos\\AccountDataService\\AccountLibrary.API\\Account.API.csproj",
+        "projectPath": "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\Account.API.csproj",
         "packagesPath": "C:\\Users\\maepocuser2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maepocuser2\\Source\\Repos\\AccountDataService\\AccountLibrary.API\\obj\\",
+        "outputPath": "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maepocuser2\\AppData\\Roaming\\NuGet\\NuGet.Config",

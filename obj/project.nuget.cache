@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DjpYpS8sNOMZlZIafVfKFb5G+QArq5w5t0TtWDcI6pMlseeHBsI1OTX3h7KODvKbJ1fbnm4KP6Jg9BLKIQNQ7A==",
+  "dgSpecHash": "JvOYogB++91CBD37BEHsyZax1DJ0f3VpTDquzxQ1cKu0gzKRvBF2cuYkUSM4xui/UgIqwbcvUoqMe8xWGF1ixQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\maepocuser2\\Source\\Repos\\AccountDataService\\AccountLibrary.API\\Account.API.csproj",
+  "projectFilePath": "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\Account.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maepocuser2\\.nuget\\packages\\automapper\\6.0.0\\automapper.6.0.0.nupkg.sha512",
     "C:\\Users\\maepocuser2\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\2.0.0\\automapper.extensions.microsoft.dependencyinjection.2.0.0.nupkg.sha512",
