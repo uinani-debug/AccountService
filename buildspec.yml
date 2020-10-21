@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region eu-west-1)
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t  mepnet:1 .
+      - docker tag mepnet:1 692105698754.dkr.ecr.eu-west-1.amazonaws.com/mepnet
+  post_build:
+    commands: 
+      - echo Build completed on `date`
+      - $(aws ecr get-login --no-include-email --region eu-west-1)
+      - echo Pushing the Docker image...
+      - docker push 692105698754.dkr.ecr.eu-west-1.amazonaws.com/mepnet
