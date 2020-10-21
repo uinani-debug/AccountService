@@ -8,8 +8,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t  mepnet:1 .
-      - docker tag maepoc:1 934139732129.dkr.ecr.us-east-2.amazonaws.com/maepoc
+      - docker build -t  maeFarGate:1 .
+      - docker tag maeFarGate:1 934139732129.dkr.ecr.us-east-2.amazonaws.com/maepoc
   post_build:
     commands: 
       - echo Build completed on `date`
