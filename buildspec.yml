@@ -21,9 +21,4 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:latest
-      - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - echo Writing image definitions file...
-      - printf '[{"name":"maeFarGate","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-      - cat imagedefinitions.json 
-artifacts:
-    files: imagedefinitions.json
+      - docker push 934139732129.dkr.ecr.us-east-2.amazonaws.com/maepoc
