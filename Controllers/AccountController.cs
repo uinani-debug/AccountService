@@ -29,20 +29,6 @@ namespace AccountLibrary.API.Controllers
                 throw new ArgumentNullException(nameof(mapper));
         }
 
-        //[Route("api/v1/accounts")]
-        //[HttpGet]
-        //public ActionResult<AccountDto> GetAccounts()
-        //{
-        //   var accpuntsFromRepo = _AccountLibraryRepository.GetAccounts();
-
-        //    if (accpuntsFromRepo == null || accpuntsFromRepo.Count() == 0)
-        //    {
-        //        return NotFound();
-        //    }
-         
-        //   return Ok((_mapper.Map<IEnumerable<Entities.Account>, IEnumerable<AccountDto>>(accpuntsFromRepo)));        
-        //}
-
         [Route("api/v1/accounts")]
         [HttpGet]
         public ActionResult<AccountDto> GetAccounts()
@@ -64,36 +50,7 @@ namespace AccountLibrary.API.Controllers
             return Ok((_mapper.Map<IEnumerable<Entities.Account>, IEnumerable<AccountDto>>(accpuntsFromRepo)));
         }
 
-        [Route("api/v1/getAccountDetails")]
-        [HttpGet]
-        public ActionResult<AccountDetails> GetAccountDetails(string AccountNumber)
-        {
-            var accpuntsFromRepo = _AccountLibraryRepository.GetAccountDetailsByID(AccountNumber);
-
-            if (accpuntsFromRepo == null)
-            {
-                return NotFound();
-            }
-
-            return Ok((_mapper.Map<Entities.Account, AccountDetails>(accpuntsFromRepo)));
-        }
-
-        //[Route("api/v1/accountsstub")]
-        //[HttpGet]
-        //public ActionResult<AccountDto> GetAccountStub()
-        //{
-        //    var list = new List<AccountDto>();
-        //    list.Add(new AccountDto
-        //    {
-        //        AccountIdentifier = "1",
-        //        AvailableBalance= 10000,
-        //        AccountStatus = AccountStatus.Open.ToString(),
-        //        AccountSubType = "1",
-        //        AccountType = "Saving"
-        //    });
-        //    return Ok(list);
-        //}
-
+        
         public override ActionResult ValidationProblem(
             [ActionResultObjectValue] ModelStateDictionary modelStateDictionary)
         {
