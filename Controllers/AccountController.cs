@@ -47,6 +47,7 @@ namespace AccountLibrary.API.Controllers
                 return NotFound();
             }
 
+
             return Ok((_mapper.Map<IEnumerable<Entities.Account>, IEnumerable<AccountDto>>(accpuntsFromRepo)));
         }
 
