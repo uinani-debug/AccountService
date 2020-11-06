@@ -49,12 +49,33 @@ namespace AccountLibrary.API.Controllers
 
             return Ok((_mapper.Map<IEnumerable<Entities.Account>, IEnumerable<AccountDto>>(accpuntsFromRepo)));
         }
-        [Route("Test")]
-        [HttpGet]
-        public ActionResult<string> Test()
-        {
-            return Ok("hello world");
 
+        [Route("accountService/api/v1/accounts")]
+        [HttpGet]
+        public ActionResult<AccountDto> GetAccounts1()
+        {
+            string customerid = string.Empty;
+            //(HttpContext.Request.Headers["x-api-customerId"].)
+            if (Request.Headers.ContainsKey("x-api-customerId"))
+                customerid = Request.Headers["x-api-customerId"].ToString();
+            else
+                return BadRequest();
+
+            var accpuntsFromRepo = _AccountLibraryRepository.GetAccounts(customerid);
+
+            if (accpuntsFromRepo == null || accpuntsFromRepo.Count() == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok((_mapper.Map<IEnumerable<Entities.Account>, IEnumerable<AccountDto>>(accpuntsFromRepo)));
+        }
+
+        [Route("health")]
+        [HttpGet]
+        public ActionResult Test()
+        {
+            return Ok();
         }
 
 
