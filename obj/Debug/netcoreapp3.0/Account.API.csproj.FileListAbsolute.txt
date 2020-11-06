@@ -72,8 +72,6 @@ C:\Users\maepocuser2\Source\Repos\AccountDataService\AccountLibrary.API\obj\Debu
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.csprojAssemblyReference.cache
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.AssemblyInfoInputs.cache
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.AssemblyInfo.cs
-C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.csproj.CoreCompileInputs.cache
-C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.dll
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.pdb
 C:\Users\maepocuser2\source\repos\AccountService\bin\Debug\netcoreapp3.0\appsettings.Development.json
@@ -139,3 +137,6 @@ C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\staticwebassets\Account.API.StaticWebAssets.Manifest.cache
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\staticwebassets\Account.API.StaticWebAssets.xml
 C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.genruntimeconfig.cache
+C:\Users\maepocuser2\source\repos\AccountService\bin\Debug\netcoreapp3.0\Oracle.ManagedDataAccess.dll
+C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.csproj.CoreCompileInputs.cache
+C:\Users\maepocuser2\source\repos\AccountService\obj\Debug\netcoreapp3.0\Account.API.MvcApplicationPartsAssemblyInfo.cache

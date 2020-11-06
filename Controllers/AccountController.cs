@@ -47,11 +47,19 @@ namespace AccountLibrary.API.Controllers
                 return NotFound();
             }
 
-
             return Ok((_mapper.Map<IEnumerable<Entities.Account>, IEnumerable<AccountDto>>(accpuntsFromRepo)));
         }
+        [Route("Test")]
+        [HttpGet]
+        public ActionResult<string> Test()
+        {
+            return Ok("hello world");
 
-        
+        }
+
+
+
+
         public override ActionResult ValidationProblem(
             [ActionResultObjectValue] ModelStateDictionary modelStateDictionary)
         {

@@ -7,7 +7,8 @@ using Dapper;
 using System.Data;
 
 using AccountLibrary.API.Models;
-using Microsoft.Data.SqlClient;
+//using Microsoft.Data.SqlClient;
+using Oracle.ManagedDataAccess.Client;
 
 namespace AccountLibrary.API.Services
 {
@@ -15,12 +16,15 @@ namespace AccountLibrary.API.Services
     {
 
         private readonly string connstring;
-        private IDbConnection Connection => new SqlConnection(connstring);
+        private IDbConnection Connection => new OracleConnection(connstring);
         public AccountLibraryRepository()
         {
 
             //  connstring = "Server=192.168.0.164;Database=maecbsdb;user=SA;Password=TCSuser1123;Trusted_Connection=True;";
-            connstring = "Server=192.168.0.164;Database=maecbsdb;user=SA;Password=TCSuser1123;";
+            //  connstring = "Server=192.168.0.164;Database=maecbsdb;user=SA;Password=TCSuser1123;";
+
+            connstring = "User Id=maeadmin;Password =Pa55w0rd;" +
+                "Data Source= 192.168.0.172:1521/orclpdb1";
         }
 
 
@@ -31,10 +35,8 @@ namespace AccountLibrary.API.Services
             {
                 c.Open();
                 var p = new DynamicParameters();
-                p.Add("custid", customerId, DbType.String, ParameterDirection.Input);
-                var x = c.Query<Account>("select * from vw_customer where cust_id = @custid", p);
-
-                // var test = c.Execute("sp_mae_get_customer_details", p, commandType: CommandType.StoredProcedure);
+                p.Add(":custid", customerId, DbType.String, ParameterDirection.Input);
+                var x = c.Query<Account>("select * from vw_customer where cust_id = :custid ", p);                             
                 c.Close();
                 return x;
             }

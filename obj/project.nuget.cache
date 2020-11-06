@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JvOYogB++91CBD37BEHsyZax1DJ0f3VpTDquzxQ1cKu0gzKRvBF2cuYkUSM4xui/UgIqwbcvUoqMe8xWGF1ixQ==",
+  "dgSpecHash": "g3Yzw7AKZ8WJJp9J0C2jsNrkqy3ReCf2DPEAvdUHpa3NEdskp9NjRBp7LXo3BbNg3duJsG+ZNV4bUi2mbV7KCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\maepocuser2\\source\\repos\\AccountService\\Account.API.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,7 @@
     "C:\\Users\\maepocuser2\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\maepocuser2\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\maepocuser2\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\maepocuser2\\.nuget\\packages\\oracle.manageddataaccess.core\\2.19.91\\oracle.manageddataaccess.core.2.19.91.nupkg.sha512",
     "C:\\Users\\maepocuser2\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\maepocuser2\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\maepocuser2\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
